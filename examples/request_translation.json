@@ -1,0 +1,8 @@
+{
+  "text": "One former senior foreign policy official in the Obama administration received messages from someone on LinkedIn offering to fly him to China and connect him with “well paid” opportunities. A former Danish Foreign Ministry official got LinkedIn messages from someone appearing to be a woman at a Chinese headhunting firm wanting to meet in Beijing. Three middle-aged men showed up instead and said they could help the former official gain “great access to the Chinese system” for research. A former Obama White House official and career diplomat was befriended on LinkedIn by a person who claimed to be a research fellow at the California Institute of Technology, with a profile page showing connections to White House aides and ambassadors. No such fellow exists. Foreign agents are exploiting social media to try to recruit assets, with LinkedIn as a prime hunting ground, Western counterintelligence officials say. Intelligence agencies in the United States, Britain, Germany and France have issued warnings about foreign agents approaching thousands of users on the site. Chinese spies are the most active, officials say.",
+  "debug": true,
+  "tasks": [
+    {"task": "translation", "name": "opennmt"}
+  ],
+  "lang": "en-it"
+}

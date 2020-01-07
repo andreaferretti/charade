@@ -1,0 +1,11 @@
+{
+  "text": "In mathematics, the Riemann–Hurwitz formula, named after Bernhard Riemann and Adolf Hurwitz, describes the relationship of the Euler characteristics of two surfaces when one is a ramified covering of the other. It therefore connects ramification with algebraic topology, in this case. Riemann was born on September 17, 1826 in Breselenz, a village near Dannenberg in the Kingdom of Hanover.",
+  "debug": true,
+  "tasks": [
+    {"task": "ner", "name": "spacy"},
+    {"task": "dates", "name": "misc"},
+    {"task": "parse", "name": "regex"},
+    {"task": "extractive-summarization", "name": "textrank"},
+    {"task": "keywords", "name": "textrank"}
+  ]
+}

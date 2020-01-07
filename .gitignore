@@ -1,0 +1,13 @@
+*.pyc
+__pycache__
+*.ipynb
+*.egg-info
+.python-version
+*.pth
+*.index
+.DS_Store
+/data
+/models
+.vscode/
+frontend/node_modules/
+frontend/build/

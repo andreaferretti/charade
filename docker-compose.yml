@@ -1,0 +1,12 @@
+version: "3"
+services:
+  charade:
+    image: charade:pipenv
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - ${PWD}/models:/opt/charade/models
+    # user: ${CURRENT_UID}
+    tmpfs:
+      - /tmp

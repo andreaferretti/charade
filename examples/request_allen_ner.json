@@ -1,0 +1,9 @@
+{
+  "text": "Ulisse Dini (Pisa, 14 novembre 1845 – Pisa, 28 ottobre 1918) è stato un matematico e politico italiano. Allievo di Enrico Betti e continuatore delle sue ricerche, perfezionò la sua preparazione per un anno a Parigi sotto la guida di Hermite e Bertrand.",
+  "debug": true,
+  "tasks": [
+    {"task": "ner", "name": "allen-custom"},
+    {"task": "names", "name": "misc"},
+    {"task": "dates", "name": "misc"}
+  ]
+}

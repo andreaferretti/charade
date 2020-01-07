@@ -1,0 +1,48 @@
+local embedding_dim = 256;
+local hidden_dim = 128;
+local elmo_model = "elmo_2x1024_128_2048cnn_1xhighway";
+
+{
+  "dataset_reader": {
+    "type": "sst_tokens",
+    "token_indexers": {
+      "tokens": {
+        "type": "elmo_characters"
+      }
+    }
+  },
+  "train_data_path": "data/sentiment/SST/trees/train.txt",
+  "validation_data_path": "data/sentiment/SST/trees/dev.txt",
+  "test_data_path": "data/sentiment/SST/trees/test.txt",
+  "evaluate_on_test": true,
+
+  "model": {
+    "type": "lstm_classifier",
+
+    "word_embeddings": {
+      "tokens": {
+        "type": "elmo_token_embedder",
+        "options_file": "data/elmo/" + elmo_model + "_options.json",
+        "weight_file": "data/elmo/" + elmo_model + "_weights.hdf5",
+        "do_layer_norm": false,
+        "dropout": 0.5
+      }
+    },
+
+    "encoder": {
+      "type": "lstm",
+      "input_size": embedding_dim,
+      "hidden_size": hidden_dim
+    }
+  },
+  "iterator": {
+    "type": "bucket",
+    "batch_size": 32,
+    "sorting_keys": [["tokens", "num_tokens"]]
+  },
+  "trainer": {
+    "optimizer": "adam",
+    "num_epochs": 30,
+    "patience": 10
+  }
+}

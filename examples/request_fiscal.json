@@ -1,0 +1,8 @@
+{
+  "text": "Io sono Mario Rossi, nato il 6/6/66 a Milano, il mio codice fiscale è RSSMRA66H06F205E. Se vi dicessi che il mio codice fiscale è MLLSNT82P65Z404U sarebbe inesatto. Però il mio iban è IT12T1234512345123456789012",
+  "debug": true,
+  "tasks": [
+    {"task": "names", "name": "misc"},
+    {"task": "fiscal_code", "name": "misc"}
+  ]
+}

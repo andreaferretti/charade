@@ -1,0 +1,7 @@
+{
+  "text": "Cantet perfectly captures the hotel lobbies, two-lane highways, and roadside cafes that permeate Vincent's days. The movie is wonderful, the most charming I have seen in a while. I'd rather be killed than dragged to see this awful movie!",
+  "debug": true,
+  "tasks": [
+    {"task": "sentiment", "name": "allen-regression"}
+  ]
+}

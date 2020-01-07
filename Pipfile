@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipykernel = "*"
+nose = "*"
+
+[packages]
+allennlp = "==0.8.3"
+spacy = "==2.1.7"
+bottle = "*"
+dateparser = "*"
+langdetect = "*"
+networkx = "*"
+cerberus = "*"
+gensim = "*"
+nltk="*"
+uwsgi = "*"
+opennmt-py = "==1.0.0rc2"
+
+[requires]
+python_version = "3.6"

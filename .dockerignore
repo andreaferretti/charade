@@ -1,0 +1,7 @@
+/data
+/models
+/examples
+/tests
+/frontend
+.ipynb_checkpoints
+**/__pycache__

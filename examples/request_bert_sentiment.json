@@ -1,0 +1,8 @@
+{
+  "text": "Bellissima e Bravissima  ieri sera la Tiziana Sinagra la sua voce incanta sempre il pubblico con la stupenda... http://t.co/F2ayT6OIMz",
+  "debug": true,
+  "tasks": [
+    {"task": "classification", "name": "bert"}
+  ],
+  "bert-model": "sentiment"
+}

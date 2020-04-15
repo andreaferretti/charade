@@ -389,6 +389,7 @@ class BertModel():
 
                         # Update the learning rate.
                         scheduler.step()
+                        optimizer.zero_grad()
 
                 results[phase] = {m : value / n_batches for m, value in results[phase].items()}
 

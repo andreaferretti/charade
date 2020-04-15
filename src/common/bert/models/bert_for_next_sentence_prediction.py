@@ -141,7 +141,6 @@ class BertForNextSentencePrediction(bert_model.BertModel):
 
         # forward propagation
         if phase == constants.TRAIN:
-            self.model.zero_grad()
             outputs = self.model(b_input_ids, token_type_ids=b_token_type_ids, attention_mask=b_input_mask, next_sentence_label=b_labels)
         else:
             with torch.no_grad():

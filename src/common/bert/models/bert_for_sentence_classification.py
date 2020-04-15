@@ -146,7 +146,6 @@ class BertForSentenceClassification(bert_model.BertModel):
 
         # forward propagation
         if phase == constants.TRAIN:
-            self.model.zero_grad()
             outputs = self.model(b_input_ids, token_type_ids=None, attention_mask=b_input_mask, labels=b_labels)
         else:
             with torch.no_grad():

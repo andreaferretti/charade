@@ -5,7 +5,7 @@ import json
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
-from services import Service, MissingLanguage
+from services import Service, MissingLanguage, MissingParameter, MissingModel
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..')))
 from common.sklearn.classification.features import split_text, get_features

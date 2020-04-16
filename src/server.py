@@ -30,6 +30,7 @@ _schema = {
     'num-keywords': {'type': 'integer'},
     'num-extractive-sentences': {'type': 'integer'},
     'lda-model': {'type': 'string'},
+    'bert-model': {'type': 'string'},
     'nmf-model': {'type': 'string'},
     'classification-model': {'type': 'string'},
     'target-lang': {'type': 'string', 'minlength': 2, 'maxlength': 2}

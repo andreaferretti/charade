@@ -19,6 +19,9 @@ gensim = "*"
 nltk="*"
 uwsgi = "*"
 opennmt-py = "==1.0.0rc2"
+transformers = "==2.6.0"
+pandas = "==1.0.3"
+ekphrasis = "==0.5.1"
 
 [requires]
 python_version = "3.6"

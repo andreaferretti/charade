@@ -24,22 +24,23 @@ class Dates(Service):
             start = 0
             end = 0
             result = []
-            for chunk, date in search_dates(text, languages=self.langs):
-                start = text.index(chunk, end)
-                end = start + len(chunk)
-                if debug:
-                    result.append({
-                        'text': chunk,
-                        'start': start,
-                        'end': end,
-                        'date': date.strftime(_format)
-                    })
-                else:
-                    result.append({
-                        'start': start,
-                        'end': end,
-                        'date': date.strftime(_format)
-                    })
+            if search_dates(text, languages=self.langs) is not None:
+                for chunk, date in search_dates(text, languages=self.langs):
+                    start = text.index(chunk, end)
+                    end = start + len(chunk)
+                    if debug:
+                        result.append({
+                            'text': chunk,
+                            'start': start,
+                            'end': end,
+                            'date': date.strftime(_format)
+                        })
+                    else:
+                        result.append({
+                            'start': start,
+                            'end': end,
+                            'date': date.strftime(_format)
+                        })
             return result
         else:
             raise MissingLanguage(lang)

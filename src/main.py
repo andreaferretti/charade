@@ -10,6 +10,7 @@ import services.nltk
 import services.sklearn
 import services.textrank
 import services.opennmt
+import services.bert
 from server import Server
 
 
@@ -37,5 +38,7 @@ if __name__ == '__main__':
     # server.add(services.sklearn.NMF())
     # server.add(services.gensim.Lda())
     # server.add(services.pytorch.Ner(['it', 'de']))
+    # server.add(services.bert.SentenceClassification())
+    # server.add(services.bert.NextSentencePrediction())
 
     server.run_http(debug=True)

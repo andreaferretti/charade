@@ -4,5 +4,5 @@
   "tasks": [
     {"task": "classification", "name": "bert"}
   ],
-  "bert-model": "newsgroups"
+  "bert-model-classification": "newsgroups"
 }

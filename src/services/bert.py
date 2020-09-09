@@ -65,10 +65,10 @@ class SentenceClassification(Service):
 
 
     def run(self, request, response):
-        if 'bert-model' in request:
-            model_name = request['bert-model']
+        if 'bert-model-classification' in request:
+            model_name = request['bert-model-classification']
         else:
-            raise MissingParameter(self.task, self.name, 'bert-model')
+            raise MissingParameter(self.task, self.name, 'bert-model-classification')
 
         if model_name in self.models:
             model = self.models[model_name]
@@ -94,7 +94,7 @@ class SentenceClassification(Service):
         result = super().describe()
         result['langs'] = self.langs
         result['extra-params'] = [{
-            'name': 'bert-model',
+            'name': 'bert-model-classification',
             'type': 'string',
             'choices': list(self.models.keys()),
             'required': True
@@ -156,10 +156,10 @@ class NextSentencePrediction(Service):
 
 
     def run(self, request, response):
-        if 'bert-model' in request:
-            model_name = request['bert-model']
+        if 'bert-model-nsp' in request:
+            model_name = request['bert-model-nsp']
         else:
-            raise MissingParameter(self.task, self.name, 'bert-model')
+            raise MissingParameter(self.task, self.name, 'bert-model-nsp')
 
         if model_name in self.models:
             model = self.models[model_name]
@@ -191,7 +191,7 @@ class NextSentencePrediction(Service):
         result['langs'] = self.langs
         result['extra-params'] = [
             {
-                'name': 'bert-model',
+                'name': 'bert-model-nsp',
                 'type': 'string',
                 'choices': list(self.models.keys()),
                 'required': True

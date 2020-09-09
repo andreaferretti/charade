@@ -4,5 +4,5 @@
   "tasks": [
     {"task": "next-sentence-prediction", "name": "bert"}
   ],
-  "bert-model": "alice_NSP"
+  "bert-model-nsp": "alice_NSP"
 }

@@ -44,7 +44,7 @@ class ServiceList extends React.Component {
     if (this.state.json[task]) {
       let currentSelection = this.state.selected
       if (currentSelection[task] && (currentSelection[task]['name'] === name)) {
-        currentSelection[task] = undefined
+        delete currentSelection[task]
       }
       else {
         currentSelection[task] = {

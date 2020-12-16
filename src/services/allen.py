@@ -102,7 +102,7 @@ def _load_model_description(model_dir):
 class PretrainedNer(Service):
     def __init__(self):
         Service.__init__(self, 'ner', 'allen', [])
-        self.model = Predictor.from_path('models/allen/pretrained/ner-model-2018.12.18.tar.gz')
+        self.model = Predictor.from_path('models/allen/pretrained/ner-model-2020.02.10.tar.gz')
 
     def run(self, request, response):
         if request['lang'] == 'en':

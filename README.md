@@ -10,7 +10,7 @@ A server for multilanguage, composable NLP API in Python.
   - [Philosophy](#philosophy)
   - [What Charade is and is not](#what-charade-is-and-is-not)
   - [Installing](#installing)
-    - [Using Pipenv (recommended)](#using-pipenv-recommended)
+    - [Using Pipenv recommended](#using-pipenv-recommended)
       - [Common errors](#common-errors)
     - [Using Conda and Pip](#using-conda-and-pip)
   - [Running](#running)
@@ -154,7 +154,7 @@ python -m nltk.downloader maxent_ne_chunker
 python -m nltk.downloader words
 
 mkdir -p models/allen/pretrained
-wget https://s3-us-west-2.amazonaws.com/allennlp/models/ner-model-2018.12.18.tar.gz -O models/allen/pretrained/ner-model-2018.12.18.tar.gz
+wget https://storage.googleapis.com/allennlp-public-models/ner-model-2020.02.10.tar.gz -O models/allen/pretrained/ner-model-2020.02.10.tar.gz
 ```
 
 #### 1.3.1.1. Common errors

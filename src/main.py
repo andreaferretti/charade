@@ -1,6 +1,6 @@
 import sys
 
-# import services.allen
+import services.allen
 import services.gensim
 import services.misc
 import services.pytorch
@@ -10,7 +10,7 @@ import services.nltk
 import services.sklearn
 import services.textrank
 import services.opennmt
-import services.bert
+# import services.bert
 from server import Server
 
 
@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     server.add(services.spacy.Parse(['it', 'en', 'de']))
     server.add(services.spacy.Ner(['it', 'en', 'de']))
-    # server.add(services.allen.PretrainedNer())
+    server.add(services.allen.PretrainedNer())
     # server.add(services.allen.Ner())
     # server.add(services.allen.Sentiment())
     # server.add(services.allen.SentimentRegression())
